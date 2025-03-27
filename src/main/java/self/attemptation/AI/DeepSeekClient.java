@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class DeepSeekClient {
-    private static final String API_KEY="sk-eb2e3a5fc2ee4702a6654ef0c709531c";
+    private static final String API_KEY="enter your key";
     private static final String BASE_URL = "https://api.deepseek.com/v1/chat/completions";
     private static final OkHttpClient client = new OkHttpClient
             .Builder()
