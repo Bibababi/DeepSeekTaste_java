@@ -19,7 +19,7 @@ public class Main {
         DeepSeekClient client = new DeepSeekClient();
 
         //setkey
-        String keypath="./DeepSeekTasteModule/key/key.txt";
+        String keypath="./DeepSeekTasteModule/keys/key01.txt";
         System.out.println(System.getProperty("user.dir"));
         BufferedReader br2 = new BufferedReader(new FileReader(keypath));
         client.setKey(br2.readLine());
