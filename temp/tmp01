@@ -1,0 +1,26 @@
+{
+"id":"6057acb1-fc07-4f71-9e96-6d17f8e002c1",
+"object":"chat.completion",
+"created":1743050902,
+"model":"deepseek-chat",
+"choices":
+[{
+    "index":0,
+    "message":
+        {
+        "role":"assistant",
+        "content":"你好！😊我是DeepSeek Chat，很高兴见到你！有什么我可以帮助你的吗？无论是问题解答、学习辅导，还是闲聊，我都会尽力帮你哦！✨"
+        },
+    "logprobs":null,
+    "finish_reason":"stop"
+}],
+"usage":
+{
+    "prompt_tokens":7,
+    "completion_tokens":36,
+    "total_tokens":43,
+    "prompt_tokens_details":{"cached_tokens":0},
+    "prompt_cache_hit_tokens":0,
+    "prompt_cache_miss_tokens":7},
+    "system_fingerprint":"fp_3d5141a69a_prod0225"
+}
