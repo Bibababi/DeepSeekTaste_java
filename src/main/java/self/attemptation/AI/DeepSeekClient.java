@@ -1,13 +1,17 @@
 package self.attemptation.AI;
 import okhttp3.*;
 import com.google.gson.Gson;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class DeepSeekClient {
-    private static final String API_KEY="enter your key";
+    private String API_KEY="enter your key";
     private static final String BASE_URL = "https://api.deepseek.com/v1/chat/completions";
     private static final OkHttpClient client = new OkHttpClient
             .Builder()
@@ -17,6 +21,14 @@ public class DeepSeekClient {
             .build();
             ;
     private static final Gson gson = new Gson();
+
+    public void setKey(String key) {
+        this.API_KEY=key;
+
+    }
+
+    public DeepSeekClient() throws IOException {
+    }
 
     public String sendRequest(String prompt) throws IOException {
 

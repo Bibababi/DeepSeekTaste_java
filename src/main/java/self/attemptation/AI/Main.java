@@ -2,6 +2,7 @@ package self.attemptation.AI;
 
 
 import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.sql.SQLOutput;
@@ -16,6 +17,12 @@ public class Main {
         System.out.println("Hello, DeepSeek!");
         System.out.println("=================================================================");
         DeepSeekClient client = new DeepSeekClient();
+
+        //setkey
+        String keypath="./DeepSeekTasteModule/key/key.txt";
+        System.out.println(System.getProperty("user.dir"));
+        BufferedReader br2 = new BufferedReader(new FileReader(keypath));
+        client.setKey(br2.readLine());
 
 
         while(true) {
