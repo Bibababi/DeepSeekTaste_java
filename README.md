@@ -16,9 +16,9 @@
 
 ### 二、导入方法
 1.先在IDEA中建一个maven项目，（先建一个空项目再加载maven也行）
-2.配置pow文件，就把这里的pow文件复制粘贴进去就行（pow文件里主要引入了两个依赖包okhttp和gson，前者是用来网络访问的，后者是生成json文件的）
-3.把main里的两个类DeepSeekClient类和Main类放在相应的文件夹里
-4.在根目录创建一个叫做keys的文件夹，并在keys中创建一个可以key01.txt文件,把deepseek key复制粘贴进去
+2.配置pom.xml文件，就把这里的pom.xml文件复制粘贴进去就行（pow文件里主要引入了两个依赖包okhttp和gson，前者是用来网络访问的，后者是生成json文件的）
+3.把main里的两个类DeepSeekClient类和Main类放在相应的文件夹里,这里推荐手敲代码，不要直接复制粘贴。
+4.在根目录有一个叫做keys的文件夹，请在keys中创建一个名为key01.txt文件,把你的deepseek key复制粘贴进去
 
 
 ## 为什么不用python?
