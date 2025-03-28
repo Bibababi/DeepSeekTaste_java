@@ -1,0 +1,7 @@
+temp/
+target/**/*
+keys/**/*
+!target/
+!target/.gitkeep
+!keys/
+!/keys/.gitkeep
